@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Online</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body onload="connect()">
+    <div class="container">
+        <br>
+        <h1>Chat Online</h1><br>
+        <label>Nick:</label>
+        <input id="nick" type="text">
+        <label>Your message: </label>
+        <input id="toSend" type="text">
+        <button onclick="sendMessage()">send</button>
+        <br><br>
+        <p id="mess"></p>
+    </div>
+<script src="stomp.js"></script>
+<script src="socket.js"></script>
+</body>
+</html>
